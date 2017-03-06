@@ -1,10 +1,7 @@
-medcodelogic-frontend
-
-Frontend for the medcodelogic search service: A joint project with the University of Berne (PSE 2017)
-
-----------------------------------------------
-
+---------------------------------
 This project was generated as described in [Angular CLI Quickstart](https://angular.io/docs/ts/latest/cli-quickstart.html).
+
+Just to try out setup of an Angular app and hosting it for testing as gh-page.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
