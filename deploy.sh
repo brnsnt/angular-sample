@@ -1,11 +1,3 @@
-branch = $(git branch | grep \*)
- if [ "$branch" == "gh-pages" ]
-then
-  echo "Abort deploy... cannot build on gh-pages, checkout master."
-else
-  echo "Start deploy to gh-pages branch..."
-fi
-
 # build project
 npm install
 ng build -prod
@@ -22,9 +14,11 @@ git checkout gh-pages
 rm -rf *
 rm .*[!git]
 
-# add and push build
+# add build
 mv /tmp/dist/* .
 rm -r /tmp/dist
+
+# commit and push build
 git add .
 git commit -am "add build"
 git push origin gh-pages
