@@ -1,6 +1,10 @@
-# AngularSample
+medcodelogic-frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
+Frontend for the medcodelogic search service: A joint project with the University of Berne (PSE 2017)
+
+----------------------------------------------
+
+This project was generated as described in [Angular CLI Quickstart](https://angular.io/docs/ts/latest/cli-quickstart.html).
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
