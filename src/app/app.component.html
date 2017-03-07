@@ -1,5 +1,10 @@
-<h1>
+
+<select #selectedLanguage (change)="setLanguage(selectedLanguage.value)">
+  <option *ngFor="let lang of languages" [selected]="lang==language" [value]="lang">{{lang}}</option>
+</select>
+
+<h3>
   {{title}}
-</h1>
-    <a routerLink="/sample" routerLinkActive="active">Sample</a>
+</h3>
 <router-outlet></router-outlet>
+
