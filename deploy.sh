@@ -12,7 +12,7 @@ mv dist /tmp/dist
 git stash
 git checkout gh-pages
 rm -rf *
-rm .*[!git]
+rm .*[!git]*
 
 # add build
 mv /tmp/dist/* .
