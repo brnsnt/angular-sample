@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <base href="/">
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <title>AngularSample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="/angular-sample/styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+<script type="text/javascript" src="/angular-sample/inline.119475003215ee2d504a.bundle.js"></script><script type="text/javascript" src="/angular-sample/polyfills.81ed681e29bd26c517a4.bundle.js"></script><script type="text/javascript" src="/angular-sample/vendor.c880d92f58909dc2c51d.bundle.js"></script><script type="text/javascript" src="/angular-sample/main.4a623b6d35a4d7a501b7.bundle.js"></script></body>
+</html>
