@@ -1,8 +1,8 @@
 # build project
 npm install
-ng build -prod
+ng build -prod -bh /angular-sample/
 
-# add custom 404 for gh-pages hack to buil
+# add custom 404 for gh-pages hack
 cp 404.html dist/404.html
 
 # move build to custom location
@@ -12,7 +12,7 @@ mv dist /tmp/dist
 git stash
 git checkout gh-pages
 rm -rf *
-rm .*[!git]*
+rm -r .[!{git}]*
 
 # add build
 mv /tmp/dist/* .
